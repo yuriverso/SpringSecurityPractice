@@ -55,18 +55,18 @@ Imaginemos que um usuário faz uma requisição para a aplicação. Esta cairá 
 ## Classes criadas e anotações utilizadas
 ### Classes
 <ul>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/SpringSecurityPracticeApplication.java">SpringSecurityPracticeApplication.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/AppUser.java">AppUser.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/Role.java">Role.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/UserRepo.java">UserRepo.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/jwt/JwtAuthFilter.java">JwtAuthFilter.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/jwt/JwtService.java">JwtService.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/config/ApplicationConfig.java">ApplicationConfig.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/config/SecurityConfig.java">SecurityConfig.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/RegisterRequest.java">RegisterRequest.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthRequest.java">AuthRequest.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthResponse.java">AuthResponse.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthService.java">AuthService.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthController.java">AuthController.java</a> - </li>
-<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/demo/DemoController.java">DemoController.java</a> - </li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/SpringSecurityPracticeApplication.java">SpringSecurityPracticeApplication.java</a> - Contém o método principal (main), responsável por inicializar a aplicação</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/AppUser.java">AppUser.java</a> - Modelo de usuário utilizado para realizar operações e criar a tabela de usuários na base de dados</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/Role.java">Role.java</a> - Enumerador que contém os possíveis papéis para o usuário (ADMIN, USER)</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/appuser/UserRepo.java">UserRepo.java</a> - Repositório para manipular a base de dados</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/jwt/JwtAuthFilter.java">JwtAuthFilter.java</a> - Filtro de autenticação da json web token recebida que será ativado uma vez por requisição</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/jwt/JwtService.java">JwtService.java</a> - Classe de serviço que contém os métodos para a checagem, manipulação e criação de jwts</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/config/ApplicationConfig.java">ApplicationConfig.java</a> - Classe de configuração que contém os Beans utilizados</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/config/SecurityConfig.java">SecurityConfig.java</a> - Classe de configuração que contém o Bean do SecurityFilterChain</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/RegisterRequest.java">RegisterRequest.java</a> - Classe modelo usada para obter dados de registro na requisição</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthRequest.java">AuthRequest.java</a> - Classe modelo usada para obter dados de autenticação na requisição</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthResponse.java">AuthResponse.java</a> - Classe modelo usada para retornar o token como resposta de uma requisição</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthService.java">AuthService.java</a> - Classe de serviço que contém os métodos de registro e autenticação de usuários</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthController.java">AuthController.java</a> - Classe de controle que contém os métodos que mapeiam as requisições relacionadas ao registro e autenticação de usuários</li>
+<li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/demo/DemoController.java">DemoController.java</a> - Classe de controle que contém um método que mapeia requisições para um endpoint protegido, utilizada para testar a segurança da aplicação</li>
 </ul>
