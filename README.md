@@ -94,3 +94,8 @@ Imaginemos que um usuário faz uma requisição para a aplicação. Esta cairá 
 <li>@NoArgsConstructor - Lombok - cria um construtor sem argumentos</li>
 <li>@RequiredArgsConstructor - Lombok - cria um construtor com todos os campos que tenham a palavra-chave final, não sendo necessário instanciá-las</li>
 </ul>
+
+## Agradecimentos
+Agradeço à toda a comunidade Java por estar sempre ajudando e acompanhando o desenvolvimento de programadores menos experientes por meio de fórums, repostas, textos, vídeos e etc. Agradeço novamente ao canal [Amigoscode](https://www.youtube.com/@amigoscode) pelas instruções e conhecimentos.
+
+Sigamos em frente!
