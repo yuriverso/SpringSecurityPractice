@@ -70,3 +70,27 @@ Imaginemos que um usuário faz uma requisição para a aplicação. Esta cairá 
 <li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/auth/AuthController.java">AuthController.java</a> - Classe de controle que contém os métodos que mapeiam as requisições relacionadas ao registro e autenticação de usuários</li>
 <li><a href="https://github.com/yuriverso/SpringSecurityPractice/blob/main/src/main/java/springsecurity/SecurityPractice/demo/DemoController.java">DemoController.java</a> - Classe de controle que contém um método que mapeia requisições para um endpoint protegido, utilizada para testar a segurança da aplicação</li>
 </ul>
+
+### Anotações
+<ul>
+<li>@SpringBootApplication - utilizada na classe principal, reúne as anotações @EnableAutoConfiguration, @ComponentScan e @Configuration</li>
+<li>@Entity - faz da classe uma tabela na base de dados</li>
+<li>@Table - usada para especificar detalhes da tabela</li>
+<li>@Id - indica o atributo que será a chave primária da tabela</li>
+<li>@GeneratedValue - configura a forma como a chave primária irá gerar seus valores</li>
+<li>@Enumerated - indicar para o Spring que se trata de um Enumerador</li>
+<li>@RestController - indica que a classe será responsável por mapear requisições</li>
+<li>@RequestMapping - indica o endereço que o controle irá tomar responsabilidade</li>
+<li>@GetMapping - indica o endereço para uma requisição do tipo GET e o método que será ativado com ela</li>
+<li>@PostMapping - indica o endereço para uma requisição do tipo POST e o método que será ativado com ela</li>
+<li>@Service - utilizada para marcar classes que, com seus métodos, servirão os propósitos do negócio</li>
+<li>@Configuration - indica que a classe possui configurações de Beans que serão utilizados</li>
+<li>@Bean - utilizada para indicar ao spring que deve ser responsável por criar, manipular e destruir objetos</li>
+<li>@EnableWebSecurity - habilita a segurança web do Spring</li>
+<li>@Component - indica que a classe deve ser administrada pelo Spring</li>
+<li>@Data - Lombok - cria getters, setters, toString, construtor e mais</li>
+<li>@Builder - Lombok - auxilia a construção de objetos</li>
+<li>@AllArgsConstructor - Lombok - cria um construtor com um argumento para cada campo da classe</li>
+<li>@NoArgsConstructor - Lombok - cria um construtor sem argumentos</li>
+<li>@RequiredArgsConstructor - Lombok - cria um construtor com todos os campos que tenham a palavra-chave final, não sendo necessário instanciá-las</li>
+</ul>
